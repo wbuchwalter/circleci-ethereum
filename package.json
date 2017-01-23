@@ -1,0 +1,23 @@
+{
+  "name": "truff",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "truffle build",
+    "serve": "truffle serve",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "docker run -d -p 8545:8545 wbuchwalter/testrpc && truffle test",
+    "test2": "docker run -d -p 8545:8545 wbuchwalter/testrpc && docker ps && curl localhost:8545"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wibuch2.visualstudio.com/_git/truffle"
+  },
+  "author": "",
+  "license": "ISC"
+}
