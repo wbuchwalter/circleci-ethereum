@@ -12,12 +12,14 @@
     "migrate": "truffle migrate",
     "test": "docker run -d -p 8545:8545 wbuchwalter/testrpc && truffle test",
     "test2": "docker run -d -p 8545:8545 wbuchwalter/testrpc && docker ps && curl localhost:8545"
-    
   },
   "repository": {
     "type": "git",
     "url": "https://wibuch2.visualstudio.com/_git/truffle"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "truffle": "^2.1.1"
+  }
 }
