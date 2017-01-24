@@ -3,7 +3,7 @@ contract('MetaCoin', function(accounts) {
     var meta = MetaCoin.deployed();
 
     return meta.getBalance.call(accounts[0]).then(function(balance) {
-      assert.equal(balance.valueOf(), 70000, "70000 wasn't in the first account");
+      assert.equal(balance.valueOf(), 80000, "80000 wasn't in the first account");
     });
   });
   it("should call a function that depends on a linked library", function() {
