@@ -347,6 +347,37 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   };
 
   Contract.all_networks = {
+  "20170123": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "conversionRate",
+            "type": "uint256"
+          }
+        ],
+        "name": "convert",
+        "outputs": [
+          {
+            "name": "convertedAmount",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      }
+    ],
+    "unlinked_binary": "0x6060604052346000575b6076806100176000396000f300606060405263ffffffff60e060020a60003504166396e4ee3d81146022575b6000565b602e6004356024356040565b60408051918252519081900360200190f35b8181025b929150505600a165627a7a7230582071b45db3dccbd6c528be82d3a0ec96095858919485b2748be2b7c328f75808760029",
+    "events": {},
+    "updated_at": 1485219794118,
+    "links": {},
+    "address": "0xf85d148cfb2e293f8259db4426655c0e31d4e69f"
+  },
   "default": {
     "abi": [
       {
@@ -374,9 +405,9 @@ var SolidityEvent = require("web3/lib/web3/event.js");
     ],
     "unlinked_binary": "0x6060604052346000575b6076806100176000396000f300606060405263ffffffff60e060020a60003504166396e4ee3d81146022575b6000565b602e6004356024356040565b60408051918252519081900360200190f35b8181025b929150505600a165627a7a7230582071b45db3dccbd6c528be82d3a0ec96095858919485b2748be2b7c328f75808760029",
     "events": {},
-    "updated_at": 1485147892108,
+    "updated_at": 1485229595994,
     "links": {},
-    "address": "0x6fab0864f3c40643abc57df41d7f6642014e558e"
+    "address": "0xfd01bbbe04139f4d60eed8bb397050e1ec26b9ff"
   }
 };
 

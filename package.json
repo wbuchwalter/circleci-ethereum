@@ -10,8 +10,8 @@
     "serve": "truffle serve",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
-    "test": "docker run -d -p 8545:8545 wbuchwalter/testrpc && truffle test",
-    "test2": "docker run -d -p 8545:8545 wbuchwalter/testrpc && docker ps && curl localhost:8545"
+    "test": "docker run -d -p 8545:8545 --name testrpc wbuchwalter/testrpc && truffle test",
+    "posttest": "docker rm -f testrpc"
   },
   "repository": {
     "type": "git",
