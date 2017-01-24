@@ -6,7 +6,9 @@ password
 .DS_Store
 
 #Geth
-geth
+#geth
+
+build
 
 # Runtime data
 pids
