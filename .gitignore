@@ -2,7 +2,6 @@
 logs
 *.log
 npm-debug.log*
-password
 .DS_Store
 
 #Geth
