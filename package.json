@@ -10,7 +10,7 @@
     "serve": "truffle serve",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
-    "test": "docker run -d -p 8545:8545 --name testrpc wbuchwalter/testrpc && sleep 3 && curl 127.0.0.1:8545 && truffle test",
+    "test": "docker run -d -p 8545:8545 --name testrpc wbuchwalter/testrpc  && truffle test",
     "posttest": "docker stop testrpc"
   },
   "repository": {
