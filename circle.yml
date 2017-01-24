@@ -6,5 +6,5 @@ deployment:
     branch: master
     commands:
       - ls
-      - docker run -it -p 8545:8545 ethereum/client-go --datadir ./geth/data --networkid 20170123 --rpc --unlock 0x322ba17d251afdb6d84fd288b5aef518208cccb9 --password ./password
+      - docker run -it -p 8545:8545 ethereum/client-go --datadir geth/data --networkid 20170123 --rpc --unlock 0x322ba17d251afdb6d84fd288b5aef518208cccb9 --password password
       - truffle migrate
