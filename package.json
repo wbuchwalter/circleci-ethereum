@@ -11,7 +11,7 @@
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "test": "docker run -d -p 8545:8545 --name testrpc wbuchwalter/testrpc && truffle test",
-    "posttest": "docker rm -f testrpc"
+    "posttest": "docker stop testrpc"
   },
   "repository": {
     "type": "git",
