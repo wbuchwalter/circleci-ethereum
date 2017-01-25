@@ -1,5 +1,5 @@
 contract('MetaCoin', function(accounts) {
-  it("should put 70000 MetaCoin in the first account", function() {
+  it("should put 80000 MetaCoin in the first account", function() {
     var meta = MetaCoin.deployed();
 
     return meta.getBalance.call(accounts[0]).then(function(balance) {
