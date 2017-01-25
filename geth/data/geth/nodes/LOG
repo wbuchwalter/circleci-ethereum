@@ -383,3 +383,25 @@
 23:40:37.422324 table@remove removed @104
 23:40:37.424769 table@remove removed @105
 23:40:37.426845 table@remove removed @106
+=============== Jan 25, 2017 (UTC) ===============
+00:29:23.200533 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:29:23.208878 version@stat F·[0 4] S·6MiB[0B 6MiB] Sc·[0.00 0.07]
+00:29:23.209652 db@open opening
+00:29:23.211649 journal@recovery F·1
+00:29:23.212734 journal@recovery recovering @107
+00:29:23.226224 memdb@flush created L0@113 N·663 S·31KiB "n:\x00..ing,v609577":"n:\xfe..ail,v609090"
+00:29:23.228954 version@stat F·[1 4] S·6MiB[31KiB 6MiB] Sc·[0.25 0.07]
+00:29:23.240478 db@janitor F·7 G·0
+00:29:23.241113 db@open done T·30.899387ms
+00:29:23.342965 table@compaction L0·1 -> L1·4 S·6MiB Q·609724
+00:29:23.838235 table@build created L1@116 N·27099 S·2MiB "n:\x00..ing,v201745":"n:M..ing,v501181"
+00:29:24.268455 table@build created L1@117 N·27175 S·2MiB "n:M..ing,v60363":"n:\x9d..ing,v44544"
+00:29:24.790423 table@build created L1@118 N·27194 S·2MiB "n:\x9d..ing,v211596":"n:\xeb..ing,v13859"
+00:29:24.970347 table@build created L1@119 N·7185 S·543KiB "n:\xeb..ing,v290030":"version,v1"
+00:29:24.971042 version@stat F·[0 4] S·6MiB[0B 6MiB] Sc·[0.00 0.07]
+00:29:24.973775 table@compaction committed F-1 S-24KiB Ke·0 D·593 T·1.62990774s
+00:29:24.976437 table@remove removed @113
+00:29:24.978888 table@remove removed @109
+00:29:24.981275 table@remove removed @110
+00:29:24.984880 table@remove removed @111
+00:29:24.989299 table@remove removed @112
