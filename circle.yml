@@ -8,6 +8,8 @@ deployment:
   production:
     branch: master
     commands:
+      - rm -rf geth/data/geth
+      - docker run -it -v $(pwd):/app ethereum/client-go --datadir /app/geth/data init /app/genesis.json
       - docker run -it -p 8545:8545 -v $(pwd):/app ethereum/client-go --datadir /app/geth/data --networkid 20170123 --rpc --unlock 0x322ba17d251afdb6d84fd288b5aef518208cccb9 --password /app/password --rpcaddr "0.0.0.0" --verbosity 5
       - node scripts/waitForEthSync.js
       - truffle migrate
