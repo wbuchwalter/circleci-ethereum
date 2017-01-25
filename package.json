@@ -10,7 +10,7 @@
     "serve": "truffle serve",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
-    "test": "",
+    "test": "truffle build",
     "posttest": "docker stop testrpc"
   },
   "repository": {
