@@ -12,3 +12,31 @@ const waitForSync = _ =>  {
 
 waitForSync()
 
+
+web3.eth.isSyncing(function(error, sync){
+    if(!error) {
+        // stop all app activity
+        if(sync === true) {
+           console.log('sync == true')
+
+        // show sync info
+        } else if(sync) {
+           console.log('sync == false') 
+           console.log(sync.currentBlock);
+
+        // re-gain app operation
+        } else {
+            // run your app init function...
+           console.log('sync is null')
+        }
+    }
+});
+
+console.log(`Status: `)
+console.log(`Connected: ${web3.isConnected()}`)
+console.log(`Syncing: ${web3.syncing}`)
+console.log(`Block#: ${web3.eth.blockNumber}`)
+
+
+
+
