@@ -85,10 +85,10 @@ ethereum/client-go \ #image name
 --datadir /app/geth/data \
 --networkid 20170123 \ 
 --rpc \
---unlock 0x322ba17d251afdb6d84fd288b5aef518208cccb9 \ #unlock an account that can submit transactions
+--unlock 0x322ba17d251afdb6d84fd288b5aef518208cccb9 \ #unlock an account from the keystore that can submit transactions
 --password /app/password \ #file containing the password to unlock the account
---rpcaddr "0.0.0.0" \
---verbosity 5 \ #for debugging
+--rpcaddr "0.0.0.0" \ #allow localholst connections
+--verbosity 5 \ #easier debugging
 ```
 
 For simplicity, the password is stored in a file in the git repository. This is obviously not ideal. Instead you should use something like CircleCI's environment variables.
