@@ -1,7 +1,5 @@
 # CI/CD for Ethereum Smart Contracts with CircleCI and Truffle
 
-[![CircleCI](https://circleci.com/gh/wbuchwalter/circleci-ethereum.svg?style=svg)](https://circleci.com/gh/wbuchwalter/circleci-ethereum)
-
 CI/CD walk-through of a simple demo app (Metacoin by Truffle) using CircleCI and docker.
 
 > If you are interested in doing CI on a windows agent with Visual Studio Team Services instead, take a look at [David Burela's article](https://davidburela.wordpress.com/2016/12/23/ethereum-devops-with-truffle-testrpc-visual-studio-team-services/)
