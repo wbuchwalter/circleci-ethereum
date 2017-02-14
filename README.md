@@ -101,3 +101,5 @@ attemptConnection('http://0.0.0.0:8545').then(waitForSync).catch(console.log)
 
 Once the syncrhonization completed we can submit our migration with `truffle migrate`
 
+
+You should now have a pipeline similar to this one: [wbuchwalter/circleci-ethereum/48](https://circleci.com/gh/wbuchwalter/circleci-ethereum/48)
